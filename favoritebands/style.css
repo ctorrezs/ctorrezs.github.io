@@ -1,0 +1,51 @@
+body {
+    background-color: #e3f2fd;
+    margin: 0px
+}
+
+img {
+    width: 150px;
+    height: 200px;
+    border: 2px dotted black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+h1, nav {
+    text-align: center;
+}
+
+th, td {
+    padding: 20px;
+}
+
+th {
+    background-color: #0d47a1;
+    color: white;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333333;
+    text-align: center;
+    padding: 30px;
+}
+
+a:visited {
+    color: blue;
+}
