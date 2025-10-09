@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function calculateWage()
+            {
+                let pamount = Number (document.getElementById("pamount").value);
+                let taxamount = pamount * 0.0825;
+                let total = pamount + taxamount;
+                document.getElementById("taxamount").value = taxamount.toFixed(2);
+                document.getElementById("total").value = total.toFixed(2);               
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <h2>TAX CALCULATOR</h2>
+
+        <form>
+
+            <label for="pamount">Enter purchase amount: </label><br>
+            <input type="text" id="pamount" name="pamount" value=""><br>
+
+            <label for="taxamount">Tax Amount: </label><br>
+            <input type="text" id="taxamount" name="taxamount" value="" disabled><br>
+
+            <label for="total">Total</label><br>
+            <input type="text" id="total" name="total" value="" disabled><br>
+            
+            <input type="button" value="Click for Answer" onclick="calculateWage()"><br>
+        </form>
+
+
+    </body>
+</html>
