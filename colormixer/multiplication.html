@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function product()
+            {
+                var multiplicand = document.getElementById("multiplicand").value;
+                var multiplier = document.getElementById("multiplier").value;
+
+                document.getElementById("output").innerHTML = "";
+
+                for (var counter = 0; counter <= multiplier; counter++ )
+                {
+                    document.getElementById("output").innerHTML += multiplicand + " X " + counter + " = " + (multiplicand * counter) + "<br>";
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="multiplicand">Multiplicand: </label><br>
+            <input type="number" name="multiplicand" id="multiplicand" value= ""><br>
+
+            <label for="multiplier">Multiplier: </label><br>
+            <input type="number" name="multiplier" id="multiplier" value= ""><br>
+
+            <input type="button" value="Click here to Generate Multiplication Table!" onclick="product()">
+
+            <div id="output"></div>
+        </form>
+    </body>
+</html>
