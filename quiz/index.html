@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Computer Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+      .feedback { margin-top: 6px; font-weight: 600; }
+      .correct { color: #0b7a0b; }
+      .incorrect { color: #b00020; }
+      #score { margin: 16px 0; font-size: 18px; }
+      .controls { margin-top: 16px; display:flex; gap:10px; flex-wrap:wrap; }
+      .controls button { padding:10px 14px; font-weight:600; }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Computer Knowledge Quiz</h1>
+    </header>
+
+    <section>
+      <h2>Match the definition with the correct terms.</h2>
+
+      <form id="quizForm">
+        <!-- Q1 -->
+        <fieldset>
+          <legend>A string of characters that provides a unique address for a web page or other resource on the Internet:</legend>
+
+          <label><input type="radio" id="q1_hyperlink" name="q1" value="Hyperlink"> Hyperlink</label><br>
+          <label><input type="radio" id="q1_url" name="q1" value="URL"> URL</label><br>
+          <label><input type="radio" id="q1_css" name="q1" value="CSS"> CSS</label><br>
+
+          <div class="feedback" id="fb-q1" aria-live="polite"></div>
+        </fieldset>
+
+        <!-- Q2 -->
+        <fieldset>
+          <legend>A wireless technology standard used for exchanging data between devices over short distances:</legend>
+
+          <label><input type="radio" id="q2_bluetooth" name="q2" value="Bluetooth"> Bluetooth</label><br>
+          <label><input type="radio" id="q2_wifi" name="q2" value="Wi-Fi"> Wi‑Fi</label><br>
+          <label><input type="radio" id="q2_router" name="q2" value="Router"> Router</label><br>
+
+          <div class="feedback" id="fb-q2" aria-live="polite"></div>
+        </fieldset>
+
+        <!-- Q3 -->
+        <fieldset>
+          <legend>Which of the following are examples of real Windows OS versions? (Select all that apply)</legend>
+
+          <label><input type="checkbox" id="q3_win11" name="q3" value="Windows 11"> Windows 11</label>
+          <label><input type="checkbox" id="q3_win81" name="q3" value="Windows 8.1"> Windows 8.1</label><br>
+          <label><input type="checkbox" id="q3_win7" name="q3" value="Windows 7"> Windows 7</label>
+          <label><input type="checkbox" id="q3_win6" name="q3" value="Windows 6"> Windows 6</label><br>
+
+          <div class="feedback" id="fb-q3" aria-live="polite"></div>
+        </fieldset>
+
+        <!-- Q4 -->
+        <fieldset>
+          <legend>Which of the following are examples of operating systems? (Select all that apply)</legend>
+
+          <label><input type="checkbox" id="q4_win11" name="q4" value="Windows 11"> Windows 11</label>
+          <label><input type="checkbox" id="q4_macos" name="q4" value="macOS"> macOS</label><br>
+          <label><input type="checkbox" id="q4_linux" name="q4" value="Linux"> Linux</label>
+          <label><input type="checkbox" id="q4_chrome" name="q4" value="Google Chrome"> Google Chrome</label><br>
+
+          <div class="feedback" id="fb-q4" aria-live="polite"></div>
+        </fieldset>
+
+        <div class="controls">
+          <button type="button" onclick="gradeQuiz()">Check Answers</button>
+          <button type="reset" onclick="clearFeedback()">Reset</button>
+        </div>
+
+        <div id="score" aria-live="polite">Score: 0 / 4</div>
+      </form>
+    </section>
+  </body>
+</html>
