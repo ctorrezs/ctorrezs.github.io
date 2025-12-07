@@ -1,0 +1,40 @@
+body {
+  background: #f4f4f4;
+}
+
+.part-img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.selection-text {
+  vertical-align: middle;
+}
+
+.total-row td {
+  font-weight: bold;
+  background: #f0f6ff;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.selection-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
